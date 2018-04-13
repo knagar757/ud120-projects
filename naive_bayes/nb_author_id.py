@@ -28,7 +28,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 ### your code goes here ###
 t0 = time()
 clf = GaussianNB()
-clf.fit(features_train[:len(features_train)/100], labels_train[:len(labels_train)/100])
+clf.fit(features_train, labels_train)
 print "time to train the model:", round((time()-t0),3)
  
 t1 = time()
